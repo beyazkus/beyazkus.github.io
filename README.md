@@ -1,1 +1,1 @@
-﻿# beyazkus.github.io - test
+﻿# beyazkus.github.io
