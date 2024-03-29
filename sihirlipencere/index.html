@@ -97,6 +97,20 @@
  <br />
  
 <script>
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function setRandomColor() {
+  $("#colorpad").css("background-color", getRandomColor());
+}
+
         let right1 = 
             document.getElementById('right1')
         let right2 = 
@@ -116,22 +130,22 @@
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-            right1.style.fill = 'red'
-            left1.style.fill = 'red'
+            right1.style.fill = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            left1.style.fill = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
         })
  
         let btn2 = 
             document.getElementById('btn2')
         btn2.addEventListener('click', () => {
-            right2.style.fill = 'green'
-            left2.style.fill = 'green'
+            right2.style.fill = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            left2.style.fill = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
         })
  
         let btn3 = 
             document.getElementById('btn3')
         btn3.addEventListener('click', () => {
-            right3.style.fill = 'blue'
-            left3.style.fill = 'blue'
+            right3.style.fill = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            left3.style.fill = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
         })
  
         let btnR = 
