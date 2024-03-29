@@ -14,7 +14,7 @@
     </style>
 </head>
 
-<body style="text-align: center; background-color:orange;">
+<body style="text-align: center; background-color:black;">
 
  
  <!-- 
@@ -26,12 +26,12 @@
     
     
 <svg
-   width="800"
-   height="800"
-   viewBox="0 0 264.58333 264.58333"
+   width="1600"
+   height="900"
+   viewBox="0 0 423.33332 238.12499"
    version="1.1"
    id="svg5"
-   inkscape:export-filename="bitmap.svg"
+   inkscape:export-filename="test.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -55,29 +55,67 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-dasharray:none"
-       id="rect234"
-       width="110.70967"
-       height="101.12904"
-       x="72.741936"
-       y="35.129032" />
-    <ellipse
-       style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-dasharray:none"
-       id="path950"
-       cx="166.59679"
-       cy="134.66129"
-       rx="54.112904"
-       ry="53.403225" />
-    <path
-       style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="M 125.61639,116.3847 29.699536,90.841473 79.628817,241.8735 184.41355,158.82191 Z"
-       id="path1058" />
+    <g
+       id="g1168">
+      <rect
+         style="fill:#ff7f2a;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect234"
+         width="211.66666"
+         height="238.125"
+         x="0"
+         y="-3.8146973e-06" />
+      <circle
+         style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="path1106"
+         cx="66.741753"
+         cy="71.759933"
+         r="44.661774" />
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect1000"
+         width="99.359901"
+         height="88.319908"
+         x="56.153378"
+         y="74.902542" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 75.090057,201.73071 21.578167,-84.67549 h 91.330816 l 10.03635,45.48287 z"
+         id="path1162" />
+    </g>
+    <g
+       id="g1178"
+       transform="translate(211.66666)">
+      <rect
+         style="fill:#ff0000;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect1170"
+         width="211.66666"
+         height="238.125"
+         x="0"
+         y="-3.8146973e-06" />
+      <circle
+         style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="circle1172"
+         cx="66.741753"
+         cy="71.759933"
+         r="44.661774" />
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect1174"
+         width="99.359901"
+         height="88.319908"
+         x="56.153378"
+         y="74.902542" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 75.090057,201.73071 21.578167,-84.67549 h 91.330816 l 10.03635,45.48287 z"
+         id="path1176" />
+    </g>
   </g>
 </svg>
+
  
  <br />
- <button id="btn">Red Square</button>
+ <button id="btn1">Red Square</button>
  <button id="btn2">Green Square</button>
  <button id="btn3">Blue Square</button>
  <br />
@@ -100,9 +138,9 @@
         let path1058 = 
             document.getElementById('path1058')
         
-        let btn = 
-            document.getElementById('btn')
-        btn.addEventListener('click', () => {
+        let btn1 = 
+            document.getElementById('btn1')
+        btn1.addEventListener('click', () => {
             rect234.style.fill = 'red'
         })
  
@@ -118,44 +156,9 @@
             rect234.style.fill = 'blue'
         })
  
-        let btn4 = 
-            document.getElementById('btn4')
-        btn4.addEventListener('click', () => {
-            path950.style.fill = 'red'
-        })
- 
-        let btn5 = 
-            document.getElementById('btn5')
-        btn5.addEventListener('click', () => {
-            path950.style.fill = 'green'
-        })
-        let btn6 = 
-            document.getElementById('btn6')
-        btn6.addEventListener('click', () => {
-            path950.style.fill = 'blue'
-        })
- 
-        let btn7 = 
-            document.getElementById('btn7')
-        btn7.addEventListener('click', () => {
-            path1058.style.fill = 'red'
-        })
- 
-        let btn8 = 
-            document.getElementById('btn8')
-        btn8.addEventListener('click', () => {
-            path1058.style.fill = 'green'
-        })
- 
-        let btn9 = 
-            document.getElementById('btn9')
-        btn9.addEventListener('click', () => {
-            path1058.style.fill = 'blue'
-        })
- 
-        let btn10 = 
-            document.getElementById('btn10')
-        btn10.addEventListener('click', () => {
+        let btnr = 
+            document.getElementById('btnr')
+        btnr.addEventListener('click', () => {
             rect234.style.fill = 'white'
             path950.style.fill = 'white'
             path1058.style.fill = 'white'
