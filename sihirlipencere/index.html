@@ -39,20 +39,20 @@
      id="layer1">
     <rect
        style="fill:#ff7f2a;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect234"
+       id="rightbg"
        width="211.66666"
        height="238.125"
        x="0"
        y="-3.8146973e-06" />
     <circle
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="path1106"
+       id="right1"
        cx="68.791664"
        cy="66.145828"
        r="38.364582" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect1000"
+       id="right2"
        width="103.1875"
        height="103.18749"
        x="54.239578"
@@ -60,23 +60,23 @@
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64581;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="M 63.499937,216.95839 86.254125,113.77082 H 182.5625 l 10.58334,55.42652 z"
-       id="path1162" />
+       id="right3" />
     <rect
        style="display:inline;fill:#ff7f2a;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect234-8"
+       id="leftbg"
        width="211.66666"
        height="238.125"
        x="211.66666"
        y="0" />
     <circle
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="circle1172"
+       id="left1"
        cx="275.16666"
        cy="66.145836"
        r="38.364582" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect1174"
+       id="left2"
        width="103.1875"
        height="103.18749"
        x="265.90625"
@@ -84,7 +84,7 @@
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64581;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 283.1041,216.95839 22.75418,-103.18757 h 96.30838 L 412.75,169.19734 Z"
-       id="path1176" />
+       id="left3" />
   </g>
 </svg>
 
@@ -97,53 +97,53 @@
  <br />
  
 <script>
-        let path1106 = 
-            document.getElementById('path1106')
-        let rect1000 = 
-            document.getElementById('rect1000')
-        let path1162 = 
-            document.getElementById('path1162')
+        let right1 = 
+            document.getElementById('right1')
+        let right2 = 
+            document.getElementById('right2')
+        let right3 = 
+            document.getElementById('right3')
             
-        let circle1172 = 
-            document.getElementById('circle1172')
-        let rect1174 = 
-            document.getElementById('rect1174')
-        let path1176 = 
-            document.getElementById('path1176')
+        let left1 = 
+            document.getElementById('left1')
+        let left2 = 
+            document.getElementById('left2')
+        let left3 = 
+            document.getElementById('left3')
             
             
         
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-            path1106.style.fill = 'red'
-            circle1172.style.fill = 'red'
+            right1.style.fill = 'red'
+            left1.style.fill = 'red'
         })
  
         let btn2 = 
             document.getElementById('btn2')
         btn2.addEventListener('click', () => {
-            rect1000.style.fill = 'green'
-            rect1174.style.fill = 'green'
+            right2.style.fill = 'green'
+            left2.style.fill = 'green'
         })
  
         let btn3 = 
             document.getElementById('btn3')
         btn3.addEventListener('click', () => {
-            path1162.style.fill = 'blue'
-            path1176.style.fill = 'blue'
+            right3.style.fill = 'blue'
+            left3.style.fill = 'blue'
         })
  
         let btnR = 
             document.getElementById('btnR')
         btnR.addEventListener('click', () => {
-            path1106.style.fill = 'white'
-            rect1000.style.fill = 'white'
-            path1162.style.fill = 'white'
+            right1.style.fill = 'white'
+            right2.style.fill = 'white'
+            right3.style.fill = 'white'
             
-            circle1172.style.fill = 'white'
-            rect1174.style.fill = 'white'
-            path1176.style.fill = 'white'
+            left1.style.fill = 'white'
+            left2.style.fill = 'white'
+            left3.style.fill = 'white'
         }) 
  
 </script>
