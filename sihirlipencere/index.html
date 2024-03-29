@@ -220,8 +220,8 @@
             document.getElementById('right8')
         let right9 = 
             document.getElementById('right9')
-        let rightbg = 
-            document.getElementById('rightbg')
+        let right10 = 
+            document.getElementById('right10')
             
         let left1 = 
             document.getElementById('left1')
@@ -241,8 +241,8 @@
             document.getElementById('left8')
         let left9 = 
             document.getElementById('left9')
-        let leftbg = 
-            document.getElementById('leftbg')
+        let left10 = 
+            document.getElementById('left10')
             
             
         
@@ -294,28 +294,23 @@
             right3.style.fill = 'white'
             right4.style.fill = 'white'
             right5.style.fill = 'white'
+            right6.style.fill = 'white'
+            right7.style.fill = 'white'
+            right8.style.fill = 'white'
+            right9.style.fill = 'purple'
+            right10.style.fill = 'orange'
             
             left1.style.fill = 'white'
             left2.style.fill = 'white'
             left3.style.fill = 'white'
             left4.style.fill = 'white'
             left5.style.fill = 'white'
-         
-            rightbg.style.fill = 'orange'
-            leftbg.style.fill = 'orange'
-         
-            right6.style.fill = 'white'
-            right7.style.fill = 'white'
-            right8.style.fill = 'white'
-            right9.style.fill = 'white'
-
-
             left6.style.fill = 'white'
             left7.style.fill = 'white'
             left8.style.fill = 'white'
-            left9.style.fill = 'white'
-
-        }) 
+            left9.style.fill = 'dark purple'
+            left10.style.fill = 'orange'
+         }) 
 
         let btn6 = 
             document.getElementById('btn6')
@@ -353,8 +348,8 @@
             document.getElementById('btn10')
         btn10.addEventListener('click', () => {
             var color10 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
-            rightbg.style.fill = color10
-            leftbg.style.fill = color10
+            right10.style.fill = color10
+            left10.style.fill = color10
         }) 
  
 </script>
