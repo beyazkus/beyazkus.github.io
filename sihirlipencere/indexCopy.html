@@ -11,20 +11,30 @@
         #element {
             text-align: center;
         }
+.button {
+  background-color: #301934;
+  border: none;
+  color: white;
+  padding: 12px 37.133px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #ffffff; color: black;} /* White */
+
     </style>
+
 </head>
 
 <body style="text-align: center; background-color:black;">
 
+ <br /> <br /> <br /> <br />
  
- <!-- 
- <h2>Sihirli Pencere</h2>
- -->
-    
- <br /> <br /> <br /> <br /> <br />
-     
-    
-    
 <svg
    width="1600"
    height="900"
@@ -38,21 +48,21 @@
   <g
      id="layer1">
     <rect
-       style="fill:#ff7f2a;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect234"
+       style="fill:#FFA500;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rightbg"
        width="211.66666"
        height="238.125"
        x="0"
        y="-3.8146973e-06" />
     <circle
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="path1106"
+       id="right1"
        cx="68.791664"
        cy="66.145828"
        r="38.364582" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect1000"
+       id="right2"
        width="103.1875"
        height="103.18749"
        x="54.239578"
@@ -60,23 +70,23 @@
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64581;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="M 63.499937,216.95839 86.254125,113.77082 H 182.5625 l 10.58334,55.42652 z"
-       id="path1162" />
+       id="right3" />
     <rect
-       style="display:inline;fill:#ff7f2a;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect234-8"
+       style="display:inline;fill:#FFA500;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="leftbg"
        width="211.66666"
        height="238.125"
        x="211.66666"
        y="0" />
     <circle
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="circle1172"
+       id="left1"
        cx="275.16666"
        cy="66.145836"
        r="38.364582" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="rect1174"
+       id="left2"
        width="103.1875"
        height="103.18749"
        x="265.90625"
@@ -84,66 +94,187 @@
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:2.64581;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 283.1041,216.95839 22.75418,-103.18757 h 96.30838 L 412.75,169.19734 Z"
-       id="path1176" />
+       id="left3" />
   </g>
 </svg>
 
  
  <br />
- <button id="btn1">Circles</button>
- <button id="btn2">Squares</button>
- <button id="btn3">Polygons</button>
- <button id="btnR">Reset All</button>
+ 
+ <button class="button button2" id="btnP"><<</button>
+ 
+ <button class="button" id="btn1">BOYA</button>
+ <button class="button" id="btn2">BOYA</button>
+ <button class="button" id="btn3">BOYA</button>
+ <button class="button" id="btn4">BOYA</button>
+ <button class="button" id="btn5">BOYA</button>
+
+ <button class="button button2" id="btnR">RESET</button>
+ 
+ <button class="button" id="btn6">BOYA</button>
+ <button class="button" id="btn7">BOYA</button>
+ <button class="button" id="btn8">BOYA</button>
+ <button class="button" id="btn9">BOYA</button>
+ <button class="button" id="btn10">BOYA</button>
+
+ <button class="button button2" id="btnN">>></button>
+
  <br />
  
 <script>
-        let path1106 = 
-            document.getElementById('path1106')
-        let rect1000 = 
-            document.getElementById('rect1000')
-        let path1162 = 
-            document.getElementById('path1162')
+
+        let right1 = 
+            document.getElementById('right1')
+        let right2 = 
+            document.getElementById('right2')
+        let right3 = 
+            document.getElementById('right3')
+        let right4 = 
+            document.getElementById('right4')
+        let right5 = 
+            document.getElementById('right5')
+        let right6 = 
+            document.getElementById('right6')
+        let right7 = 
+            document.getElementById('right7')
+        let right8 = 
+            document.getElementById('right8')
+        let right9 = 
+            document.getElementById('right9')
+        let rightbg = 
+            document.getElementById('rightbg')
             
-        let circle1172 = 
-            document.getElementById('circle1172')
-        let rect1174 = 
-            document.getElementById('rect1174')
-        let path1176 = 
-            document.getElementById('path1176')
+        let left1 = 
+            document.getElementById('left1')
+        let left2 = 
+            document.getElementById('left2')
+        let left3 = 
+            document.getElementById('left3')
+        let left4 = 
+            document.getElementById('left4')
+        let left5 = 
+            document.getElementById('left5')
+        let left6 = 
+            document.getElementById('left6')
+        let left7 = 
+            document.getElementById('left7')
+        let left8 = 
+            document.getElementById('left8')
+        let left9 = 
+            document.getElementById('left9')
+        let leftbg = 
+            document.getElementById('leftbg')
             
             
         
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-            path1106.style.fill = 'red'
-            circle1172.style.fill = 'red'
+            var color1 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right1.style.fill = color1
+            left1.style.fill = color1
         })
  
         let btn2 = 
             document.getElementById('btn2')
         btn2.addEventListener('click', () => {
-            rect1000.style.fill = 'green'
-            rect1174.style.fill = 'green'
+            var color2 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right2.style.fill = color2
+            left2.style.fill = color2
         })
  
         let btn3 = 
             document.getElementById('btn3')
         btn3.addEventListener('click', () => {
-            path1162.style.fill = 'blue'
-            path1176.style.fill = 'blue'
+            var color3 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right3.style.fill = color3
+            left3.style.fill = color3
         })
+
+        let btn4 = 
+            document.getElementById('btn4')
+        btn4.addEventListener('click', () => {
+            var color4 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right4.style.fill = color4
+            left4.style.fill = color4
+        })
+        
+        let btn5 = 
+            document.getElementById('btn5')
+        btn5.addEventListener('click', () => {
+            var color5 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right5.style.fill = color5
+            left5.style.fill = color5
+        }) 
  
         let btnR = 
             document.getElementById('btnR')
         btnR.addEventListener('click', () => {
-            path1106.style.fill = 'white'
-            rect1000.style.fill = 'white'
-            path1162.style.fill = 'white'
+            right1.style.fill = 'white'
+            right2.style.fill = 'white'
+            right3.style.fill = 'white'
             
-            circle1172.style.fill = 'white'
-            rect1174.style.fill = 'white'
-            path1176.style.fill = 'white'
+            left1.style.fill = 'white'
+            left2.style.fill = 'white'
+            left3.style.fill = 'white'
+         
+            rightbg.style.fill = 'orange'
+            leftbg.style.fill = 'orange'
+         
+            right4.style.fill = 'white'
+            right5.style.fill = 'white'
+            right6.style.fill = 'white'
+            right7.style.fill = 'white'
+            right8.style.fill = 'white'
+            right9.style.fill = 'white'
+
+            left4.style.fill = 'white'
+            left5.style.fill = 'white'
+            left6.style.fill = 'white'
+            left7.style.fill = 'white'
+            left8.style.fill = 'white'
+            left9.style.fill = 'white'
+
+        }) 
+
+        let btn6 = 
+            document.getElementById('btn6')
+        btn6.addEventListener('click', () => {
+            var color6 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right6.style.fill = color6
+            left6.style.fill = color6
+        })
+ 
+        let btn7 = 
+            document.getElementById('btn7')
+        btn7.addEventListener('click', () => {
+            var color7 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right7.style.fill = color7
+            left7.style.fill = color7
+        })
+ 
+        let btn8 = 
+            document.getElementById('btn8')
+        btn8.addEventListener('click', () => {
+            var color8 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right8.style.fill = color8
+            left8.style.fill = color8
+        })
+
+        let btn9 = 
+            document.getElementById('btn9')
+        btn9.addEventListener('click', () => {
+            var color9 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            right9.style.fill = color9
+            left9.style.fill = color9
+        })
+
+         let btn10 = 
+            document.getElementById('btn10')
+        btn10.addEventListener('click', () => {
+            var color10 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            rightbg.style.fill = color10
+            leftbg.style.fill = color10
         }) 
  
 </script>
