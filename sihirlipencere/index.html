@@ -185,6 +185,14 @@
             left2.style.fill = 'white'
             left3.style.fill = 'white'
         }) 
+
+         let btn10 = 
+            document.getElementById('btn10')
+        btn10.addEventListener('click', () => {
+            var color10 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            rightbg.style.fill = color10
+            leftbg.style.fill = color10
+        }) 
  
 </script>
 </body>
