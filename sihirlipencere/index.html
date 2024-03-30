@@ -244,12 +244,16 @@
         let left10 = 
             document.getElementById('left10')
             
-            
+
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff'];
+
+;
+
         
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-            var color1 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            var color1 = colors[Math.floor(Math.random() * colors.length)]
             right1.style.fill = color1
             left1.style.fill = color1
         })
