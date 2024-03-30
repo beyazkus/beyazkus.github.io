@@ -330,41 +330,41 @@ var i1 = 0;  var i2 = 0; var i3 = 0; var i4 = 0; var i5 = 0; var i6 = 0;  var i7
         let btn6 = 
             document.getElementById('btn6')
         btn6.addEventListener('click', () => {
-            var color6 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
-            right6.style.fill = color6
-            left6.style.fill = color6
+            right6.style.fill = colors[i6]
+            left6.style.fill = colors[i6]
+            i6 = (i6 + 1) % colors.length
         })
  
         let btn7 = 
             document.getElementById('btn7')
         btn7.addEventListener('click', () => {
-            var color7 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
-            right7.style.fill = color7
-            left7.style.fill = color7
+            right7.style.fill = colors[i7]
+            left7.style.fill = colors[i7]
+            i7 = (i7 + 1) % colors.length
         })
  
         let btn8 = 
             document.getElementById('btn8')
         btn8.addEventListener('click', () => {
-            var color8 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
-            right8.style.fill = color8
-            left8.style.fill = color8
+            right8.style.fill = colors[i8]
+            left8.style.fill = colors[i8]
+            i8 = (i8 + 1) % colors.length
         })
 
         let btn9 = 
             document.getElementById('btn9')
         btn9.addEventListener('click', () => {
-            var color9 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
-            right9.style.fill = color9
-            left9.style.fill = color9
+            right9.style.fill = colors[i9]
+            left9.style.fill = colors[i9]
+            i9 = (i9 + 1) % colors.length
         })
 
          let btn10 = 
             document.getElementById('btn10')
         btn10.addEventListener('click', () => {
-            var color10 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
-            right10.style.fill = color10
-            left10.style.fill = color10
+            right10.style.fill = colors[i10]
+            left10.style.fill = colors[i10]
+            i10 = (i10 + 1) % colors.length
         }) 
  
 </script>
