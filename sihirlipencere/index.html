@@ -245,50 +245,53 @@
             document.getElementById('left10')
             
 
-const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#000080','#800080', '#555555', '#ffa500', '#a52a2a', '#000064'];
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#000080','#800080', '#555555', '#ffa500', '#a52a2a', '#006400'];
 var i = 0;  
 
-
+// random color: "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
         
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-            var color1 = colors[i]
+            right1.style.fill = colors[i]
+            left1.style.fill = colors[i]
             i = (i + 1) % colors.length
-            right1.style.fill = color1
-            left1.style.fill = color1
         })
  
         let btn2 = 
             document.getElementById('btn2')
         btn2.addEventListener('click', () => {
-            var color2 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            var color2 = colors[i]
             right2.style.fill = color2
             left2.style.fill = color2
+            i = (i + 1) % colors.length
         })
  
         let btn3 = 
             document.getElementById('btn3')
         btn3.addEventListener('click', () => {
-            var color3 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            var color3 = colors[i]
             right3.style.fill = color3
             left3.style.fill = color3
+            i = (i + 1) % colors.length
         })
 
         let btn4 = 
             document.getElementById('btn4')
         btn4.addEventListener('click', () => {
-            var color4 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            var color4 = colors[i]
             right4.style.fill = color4
             left4.style.fill = color4
+            i = (i + 1) % colors.length
         })
         
         let btn5 = 
             document.getElementById('btn5')
         btn5.addEventListener('click', () => {
-            var color5 = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
+            var color5 = colors[i]
             right5.style.fill = color5
             left5.style.fill = color5
+            i = (i + 1) % colors.length
         }) 
  
         let btnR = 
