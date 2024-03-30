@@ -245,15 +245,17 @@
             document.getElementById('left10')
             
 
-const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff'];
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
 
-;
+
 
         
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-            var color1 = colors[Math.floor(Math.random() * colors.length)]
+         i++   
+         var color1 = colors[i)
+            
             right1.style.fill = color1
             left1.style.fill = color1
         })
