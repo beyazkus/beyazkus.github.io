@@ -255,7 +255,9 @@ var i = 0;
         btn1.addEventListener('click', () => {
             
             var color1 = colors[i]
+            if i < (colors.length - 1)
             i++
+            else i = 0
             right1.style.fill = color1
             left1.style.fill = color1
         })
