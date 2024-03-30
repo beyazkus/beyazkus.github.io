@@ -1,6 +1,16 @@
-h1 {color: #dddddd;}
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 72px;
+  color: #dddddd;
+  font-style: normal;
+}
 
-h2 {color: #dddddd;}
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #dddddd;
+  font-style: normal;
+}
 
 #element {text-align: center;}
 
