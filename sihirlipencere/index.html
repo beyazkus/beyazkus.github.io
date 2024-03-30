@@ -245,7 +245,7 @@
             document.getElementById('left10')
             
 
-const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#000080','#800080, '#555555, '#ffa500, '#a52a2a, '000064'];
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#000080','#800080, '#555555, '#ffa500, '#a52a2a, '#000064'];
 var i = 0;  
 
 
@@ -253,7 +253,6 @@ var i = 0;
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-            
             var color1 = colors[i]
             i = (i + 1) % colors.length
             right1.style.fill = color1
