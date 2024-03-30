@@ -1,6 +1,6 @@
 h1 {
   font-family: Arial, sans-serif;
-  font-size: 62px;
+  font-size: 72px;
   color: #ffffff;
   font-style: normal;
 }
@@ -15,7 +15,7 @@ h2 {
 h3 {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  color: #dddddd;
+  color: #ffffff;
   font-style: normal;
 }
 
@@ -35,19 +35,20 @@ h3 {
   cursor: pointer;
 }
 
-.button2 {padding: 18px 136px; font-size: 17.5px;}
+.button2 {background-color: #006400; padding: 18px 136px; font-size: 17.5px;}
 
 img {border-radius: 20px;}
 
-div {
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 400px 400px;
     grid-gap: 20px;
+    width: fit-content
+}
+
+.grid-item {
+    border: 15px solid green;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
 }
