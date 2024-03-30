@@ -4,6 +4,10 @@ h2 {color: #dddddd;}
 
 #element {text-align: center;}
 
+p {
+font-family: Tahoma, Verdana, sans-serif;
+}
+
 .button {
   background-color: #222222;
   border: none;
