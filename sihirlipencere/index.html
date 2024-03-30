@@ -246,16 +246,16 @@
             
 
 const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
-
+var i = 0;  
 
 
         
         let btn1 = 
             document.getElementById('btn1')
         btn1.addEventListener('click', () => {
-         i++   
-         var color1 = colors[i)
             
+            var color1 = colors[i]
+            i++
             right1.style.fill = color1
             left1.style.fill = color1
         })
