@@ -19,6 +19,13 @@ h3 {
   font-style: normal;
 }
 
+h4 {
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  color: #dddddd;
+  font-style: normal;
+}
+
 #element {text-align: center;}
 
 .button {
