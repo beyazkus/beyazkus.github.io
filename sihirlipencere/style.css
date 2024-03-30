@@ -35,7 +35,8 @@ h3 {
   cursor: pointer;
 }
 
-.button2 {background-color: #006400; padding: 18px 136px; font-size: 17.5px;}
+.button2 {background-color: #222222; padding: 18px 136px; font-size: 17.5px;}
+.button3 {background-color: #006400; padding: 18px 136px; font-size: 17.5px;}
 
 img {border-radius: 20px;}
 
