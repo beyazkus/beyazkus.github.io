@@ -1,3 +1,8 @@
+html, body {
+
+margin: 0;
+}
+
 h1 {
   font-family: Arial, sans-serif;
   font-size: 72px;
@@ -7,22 +12,22 @@ h1 {
 
 h2 {
   font-family: Arial, sans-serif;
+  font-size: 42px;
+  color: #dddddd;
+  font-style: normal;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
   font-size: 24px;
   color: #dddddd;
   font-style: italic;
 }
 
-h3 {
+p {
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20x;
   color: #ffffff;
-  font-style: normal;
-}
-
-h4 {
-  font-family: Arial, sans-serif;
-  font-size: 42px;
-  color: #dddddd;
   font-style: normal;
 }
 
@@ -55,6 +60,7 @@ img {border-radius: 20px;}
 }
 
 .grid-item {
+    background-color: #222222;
     border: 15px solid green;
     padding: 40px;
     margin: 10px;
