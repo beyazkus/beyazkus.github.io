@@ -23,7 +23,7 @@ h3 {
 
 p {
   font-family: Arial, sans-serif;
-  font-size: 16x;
+  font-size: 16px;
   color: #ffffff;
   font-style: normal;
 }
@@ -34,21 +34,33 @@ p {
   background-color: #222222;
   border: none;
   color: #dddddd;
-  padding: 12px 66.9px;
+  width: 352.2px;
+  height: 75px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
-  margin: 6px 2px;
+  margin: 0px 5px;
   cursor: pointer;
   transition-duration: 0.3s;
-
 }
 
-/* transform: translateY(-5px); 
-margin: 4px 2px;
-*/
+.button2 {background-color: #006400; color: #ffffff; cursor: default;}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.footer-container {
+  background-color: darkgreen;
+  display: flex;
+  justify-content: center;
+  margin-top: 39px;
+  margin-bottom: 0px;
+}
+
 
 .button:hover {
   background-color: #006400;
@@ -60,18 +72,22 @@ margin: 4px 2px;
   color: #ffffff;
 }
 
-.button3:hover {
-  background-color: #006400;
-  color: #ffffff;
+.color-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+  margin-bottom: 8px;
 }
 
-.button2 {background-color: #222222; padding: 18px 136.2px; font-size: 17.5px;}
-.button3 {background-color: #006400; color: #ffffff; padding: 18px 136px; font-size: 17.5px; margin: 9px 2px; cursor: default;}
+.color-item {
+  width: 140.75px;
+  height: 50px;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
 
-/* test buttons */
-.button4 {background-color: #ff0000; padding: 18px 180px; font-size: 17.5px; cursor: default;}
-.button5 {background-color: #006400; padding: 18px 800px; font-size: 17.5px; cursor: default;}
-/* test buttons */
+.color-option:hover {transform: translateY(5px);}
 
 img {border-radius: 20px;}
 

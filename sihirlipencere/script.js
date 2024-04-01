@@ -1,4 +1,6 @@
-        let right1 = 
+       /*
+       
+       let right1 = 
             document.getElementById('right1')
         let right2 = 
             document.getElementById('right2')
@@ -39,6 +41,8 @@
             document.getElementById('left9')
         let left10 = 
             document.getElementById('left10')
+
+            */
             
 
 const colors = ['#e81416', '#ffa500', '#faeb36', '#79c314', '#487de7', '#4b369d', '#70369d', '#555555', '#dddddd'];
