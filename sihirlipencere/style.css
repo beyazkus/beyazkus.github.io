@@ -1,7 +1,4 @@
-html, body {
-
-margin: 0;
-}
+html, body {margin: 0;}
 
 h1 {
   font-family: Arial, sans-serif;
@@ -43,12 +40,38 @@ p {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
-  margin: 4px 2px;
+  margin: 6px 2px;
   cursor: pointer;
+  transition-duration: 0.3s;
+
 }
 
-.button2 {background-color: #222222; padding: 18px 136px; font-size: 17.5px;}
-.button3 {background-color: #006400; padding: 18px 136px; font-size: 17.5px; cursor: default;}
+/* transform: translateY(-5px); 
+margin: 4px 2px;
+*/
+
+.button:hover {
+  background-color: #006400;
+  color: #ffffff;
+}
+
+.button2:hover {
+  background-color: #006400;
+  color: #ffffff;
+}
+
+.button3:hover {
+  background-color: #006400;
+  color: #ffffff;
+}
+
+.button2 {background-color: #222222; padding: 18px 136.2px; font-size: 17.5px;}
+.button3 {background-color: #006400; color: #ffffff; padding: 18px 136px; font-size: 17.5px; margin: 9px 2px; cursor: default;}
+
+/* test buttons */
+.button4 {background-color: #ff0000; padding: 18px 180px; font-size: 17.5px; cursor: default;}
+.button5 {background-color: #006400; padding: 18px 800px; font-size: 17.5px; cursor: default;}
+/* test buttons */
 
 img {border-radius: 20px;}
 
