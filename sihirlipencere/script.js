@@ -34,18 +34,47 @@ function delayedCodeForColors() {
 
 menu.addEventListener("mouseenter", function() {
     menu.style.opacity = 1;
-    document.body.style.transition = 'background 1s ease';
-    document.body.style.background = '#3c3c3c'
-})
-
-colors.addEventListener("mouseenter", function() {
     colors.style.opacity = 1;
     document.body.style.transition = 'background 1s ease';
     document.body.style.background = '#3c3c3c'
 })
 
-btnS.addEventListener('click', () => {  
+colors.addEventListener("mouseenter", function() {
+    menu.style.opacity = 1;
+    colors.style.opacity = 1;
+    document.body.style.transition = 'background 1s ease';
+    document.body.style.background = '#3c3c3c'
+})
+
+btnH.addEventListener('click', () => {  
     menu.style.opacity = 0
     colors.style.opacity = 0
     document.body.style.background = '#222222'
 })
+
+const btnF = document.getElementById('btnF');
+
+btnF.addEventListener('click', () => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  } else {
+    document.documentElement.requestFullscreen();
+  }
+});
+
+/*
+const content = document.getElementById('content');
+const zoomInButton = document.getElementById('zoomInButton');
+const zoomOutButton = document.getElementById('zoomOutButton');
+let scale = 1.0;
+
+zoomInButton.addEventListener('click', () => {
+  scale += 0.1;
+  content.style.transform = `scale(${scale})`;
+});
+
+zoomOutButton.addEventListener('click', () => {
+  scale -= 0.1;
+  content.style.transform = `scale(${scale})`;
+});
+*/

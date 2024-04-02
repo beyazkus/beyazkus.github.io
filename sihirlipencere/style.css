@@ -34,17 +34,18 @@ p {
   background-color: #222222;
   border: none;
   color: #dddddd;
-  width: 352.2px;
-  height: 80px;
+  /*width: 352.2px;*/
+  width: 174.33px;
+  height: 60px; /*80*/
   text-align: center;
-  font-size: 24px;
+  font-size: 20px; /*24*/
   font-weight: bold;
   margin: 0px 5px;
   cursor: pointer;
   transition-duration: 0.3s;
 }
 
-.button2 {background-color: darkgreen; color: #ffffff; /*cursor: default;*/}
+.button2 {background-color: darkgreen; color: #ffffff; cursor: default;}
 
 .menu-container {
   display: flex;
@@ -74,8 +75,9 @@ p {
 }
 
 .color-item {
-  width: 65.4px;
-  height: 60px;
+  /*width: 65.4px;*/
+  width: 43.75px;
+  height: 50px;
   margin: 0px 5px;
   cursor: pointer;
   transition-duration: 0.3s;
