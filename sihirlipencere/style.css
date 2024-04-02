@@ -34,9 +34,9 @@ p {
   background-color: #222222;
   border: none;
   color: #dddddd;
-  /*width: 352.2px;*/
-  width: 183px;
-  height: 60px; /*80*/
+  /*width: 183;*/
+  width: 142.85px;
+  height: 60px; /*60*/
   text-align: center;
   font-size: 18px; /*24*/
   font-weight: bold;
@@ -75,16 +75,16 @@ p {
 }
 
 .color-item {
-  /*width: 65.4px;*/
-  width: 53.33px;
-  height: 53.33px;
+  /*w-h: 53.33;*/
+  width: 41.66px;
+  height: 41.66px;
   margin: 0px 0px; /*0 4 */ 
   cursor: pointer;
   transform: translateY(-4px);
   transition-duration: 0.3s;
 }
 
-.color-item:hover {transform: translateY(-26.66px);}
+.color-item:hover {transform: translateY(-13.33px);}
 
 img {border-radius: 20px;}
 
