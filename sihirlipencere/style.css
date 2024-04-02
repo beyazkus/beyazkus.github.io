@@ -28,7 +28,7 @@ p {
   font-style: normal;
 }
 
-#element {text-align: center;}
+/*#element {text-align: center;}*/
 
 .button {
   background-color: #222222;
@@ -44,7 +44,7 @@ p {
   transition-duration: 0.3s;
 }
 
-.button2 {background-color: darkgreen; color: #ffffff; cursor: default;}
+.button2 {background-color: darkgreen; color: #ffffff; /*cursor: default;*/}
 
 .menu-container {
   display: flex;
@@ -52,6 +52,7 @@ p {
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 8px;
+  transition-duration: 1s;
 }
 
 .button:hover {
@@ -69,10 +70,10 @@ p {
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 8px;
+  transition-duration: 1s;
 }
 
 .color-item {
-  /*width: 140.75px;*/
   width: 65.4px;
   height: 60px;
   margin: 0px 5px;
@@ -80,7 +81,7 @@ p {
   transition-duration: 0.3s;
 }
 
-.color-option:hover {transform: translateY(5px);}
+.color-item:hover {transform: translateY(-5px);}
 
 img {border-radius: 20px;}
 

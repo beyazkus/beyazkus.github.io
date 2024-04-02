@@ -13,13 +13,29 @@ btnR.addEventListener('click', () => {
     selectedColor = '#dddddd'
 })
 
-function colorPath(pathId) {
-    const path = document.getElementById(pathId);
-    path.style.fill = selectedColor;
-    }
-
 let selectedColor = '#dddddd'
   
 function selectColor(color) {
     selectedColor = color;
     }
+
+function colorPath(pathId) {
+    const path = document.getElementById(pathId);
+    path.style.fill = selectedColor;
+    }
+
+/* setTimeout(delayedCodeForMenu, 5000)
+function delayedCodeForMenu() {
+    menu.style.opacity = 0;}
+    
+setTimeout(delayedCodeForColors, 5000)
+function delayedCodeForColors() {
+    colors.style.opacity = 0;} */
+
+menu.addEventListener("mouseenter", function() {menu.style.opacity = 1;})
+colors.addEventListener("mouseenter", function() {colors.style.opacity = 1;})
+
+btnS.addEventListener('click', () => {  
+    menu.style.opacity = 0
+    colors.style.opacity = 0
+})
