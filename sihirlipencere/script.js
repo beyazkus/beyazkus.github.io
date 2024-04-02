@@ -32,10 +32,20 @@ setTimeout(delayedCodeForColors, 5000)
 function delayedCodeForColors() {
     colors.style.opacity = 0;} */
 
-menu.addEventListener("mouseenter", function() {menu.style.opacity = 1;})
-colors.addEventListener("mouseenter", function() {colors.style.opacity = 1;})
+menu.addEventListener("mouseenter", function() {
+    menu.style.opacity = 1;
+    document.body.style.transition = 'background 1s ease';
+    document.body.style.background = '#3c3c3c'
+})
+
+colors.addEventListener("mouseenter", function() {
+    colors.style.opacity = 1;
+    document.body.style.transition = 'background 1s ease';
+    document.body.style.background = '#3c3c3c'
+})
 
 btnS.addEventListener('click', () => {  
     menu.style.opacity = 0
     colors.style.opacity = 0
+    document.body.style.background = '#222222'
 })
