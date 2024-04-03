@@ -52,7 +52,7 @@ btnH.addEventListener('click', () => {
     document.body.style.background = '#222222'
 })
 
-const btnF = document.getElementById('btnF');
+/* const btnF = document.getElementById('btnF'); ??? */
 
 btnF.addEventListener('click', () => {
   if (document.fullscreenElement) {
@@ -61,20 +61,3 @@ btnF.addEventListener('click', () => {
     document.documentElement.requestFullscreen();
   }
 });
-
-/*
-const content = document.getElementById('content');
-const zoomInButton = document.getElementById('zoomInButton');
-const zoomOutButton = document.getElementById('zoomOutButton');
-let scale = 1.0;
-
-zoomInButton.addEventListener('click', () => {
-  scale += 0.1;
-  content.style.transform = `scale(${scale})`;
-});
-
-zoomOutButton.addEventListener('click', () => {
-  scale -= 0.1;
-  content.style.transform = `scale(${scale})`;
-});
-*/
